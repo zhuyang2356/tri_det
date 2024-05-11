@@ -1,0 +1,3 @@
+一个分布式AI推理部署结构，使用rabbitmq收发json消息，使用Amazon S3做分布式存储，使用redis做不同分布式终端（docker/多机）的变量控制。
+项目追求和达成的思想是在unite_sys文件夹里负责整个系统各个节点间的信息收发。各个节点(docker，或者物理机）之间通过rabbitmq收发json信息，redis做不同分布式终端的变量控制。
+而task文件夹是业务部署代码。我们可以增加task1,task2, task3,....
